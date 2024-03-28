@@ -1,0 +1,10 @@
+{
+	"python.pythonPath":"/home/killer/anaconda3/envs/py39/envs/mapf/bin/python",
+	"coc.preferences.jumpCommand": "tabe", 
+	"python.formatting.provider": "autopep8",
+	"explorer.file.reveal.whenOpen": true, 
+	"explorer.icon.enableNerdfont": true,
+  "explorer.width": 25,
+  "snippets.ultisnips.pythonPrompt": false,
+
+}

@@ -1,0 +1,43 @@
+
+alias ls='ls --color=auto'
+alias ll='ls -l'
+alias c='clear'
+alias h='htop'
+alias n='neofetch'
+alias r='ranger'
+alias s='startx'
+alias sus='systemctl suspend'
+alias wetr='curl http://wttr.in/dalian'
+alias vim='nvim'
+export EDITOR='neovim'
+### Added by Zinit's installer
+if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
+    print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
+    command mkdir -p "$HOME/.local/share/zinit" && command chmod g-rwX "$HOME/.local/share/zinit"
+    command git clone https://github.com/zdharma-continuum/zinit "$HOME/.local/share/zinit/zinit.git" && \
+        print -P "%F{33} %F{34}Installation successful.%f%b" || \
+        print -P "%F{160} The clone has failed.%f%b"
+fi
+
+source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+# __conda_setup="$('/home/killer/anaconda3/envs/py39/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/home/killer/anaconda3/envs/py39/etc/profile.d/conda.sh" ]; then
+#         . "/home/killer/anaconda3/envs/py39/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/home/killer/anaconda3/envs/py39/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
+# <<< conda initialize <<<
+
+alias setproxy="export https_proxy=http://127.0.0.1:2340;export http_proxy=http://127.0.0.1:2340;export all_proxy=socks5://127.0.0.1:1080"
+alias unsetproxy="unset ALL_PROXY"
+
