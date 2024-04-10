@@ -168,7 +168,7 @@ let g:rnvimr_action = {
 " =================== fzf_lua =====================
 noremap <silent> <C-f> :Rg<CR>
 noremap <silent> <C-h> :FzfLua oldfiles cwd=~<CR>
-noremap <silent> <C-q> :FzfLua builtin<CR>
+noremap <silent> <C-q> :FzfLua buffers<CR>
 noremap <silent> <C-l> :FzfLua lines<CR>
 
 " ==================== xtabline ====================
