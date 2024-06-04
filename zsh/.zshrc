@@ -136,9 +136,9 @@ alias conda_source='source /home/killer/anaconda3/envs/py39/bin/activate'
 # export GTK_MODULES=unity-gtk-module
 export EDITOR='nvim'
 
-# export https_proxy=http://127.0.0.1:7890
-# export http_proxy=http://127.0.0.1:7890
-# export all_proxy=socks5://127.0.0.1:7890
+export https_proxy=http://127.0.0.1:7890
+export http_proxy=http://127.0.0.1:7890
+export all_proxy=socks5://127.0.0.1:7890
 
 # eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"

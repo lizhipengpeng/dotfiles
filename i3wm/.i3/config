@@ -276,8 +276,8 @@ exec --no-startup-id nm-applet
 exec --no-startup-id fcitx5 -d
 # exec --no-startup-id barrier
 exec --no-startup-id copyq
-exec --no-startup-id xfce4-power-manager
-exec --no-startup-id xautolock -time 30 -locker slock
+# exec --no-startup-id xfce4-power-manager
+# exec --no-startup-id xautolock -time 60 -locker slock
 # exec_always --no-startup-id /home/killer/files/dwm/scrips/wp_autochange.sh
 exec_always --no-startup-id alist server --data /home/killer/data &
 exec_always --no-startup-id feh --bg-fill /home/killer/Pictures/wallpaper/simple.png

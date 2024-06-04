@@ -22,6 +22,7 @@ set wrap
 " set smartindent
 filetype plugin indent on
 
+lua require('plugins')
 
 "use the terminal
 nmap ! :!
@@ -106,13 +107,12 @@ Plug 'wellle/tmux-complete.vim'
 " Plug 'Exafunction/codeium.vim'
 Plug 'sillybun/vim-repl'
 Plug 'jayli/vim-easydebugger'
+Plug 'utilyre/barbecue.nvim'
 call plug#end()
 
 
 " ===================== coc.nvim extensions =====================
-let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-pyright', 'coc-explorer', 'coc-translator', 'coc-clangd']
-
-" Make <CR> to accept selected completion item or notify coc.nvim to format
+let g:coc_global_extensions = ['coc-json', 'coc-git',  'coc-explorer', 'coc-translator', 'coc-clangd'] "'coc-pyright' Make <CR> to accept selected completion item or notify coc.nvim to format
 " <C-g>u breaks current undo, please make your own choice
 " inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#confirm()
                               " \: \"\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
@@ -168,7 +168,7 @@ let g:rnvimr_action = {
 " =================== fzf_lua =====================
 noremap <silent> <C-f> :Rg<CR>
 noremap <silent> <C-h> :FzfLua oldfiles cwd=~<CR>
-noremap <silent> <C-q> :FzfLua buffers<CR>
+noremap <silent> B :FzfLua buffers<CR>
 noremap <silent> <C-l> :FzfLua lines<CR>
 
 " ==================== xtabline ====================
