@@ -34,3 +34,4 @@ source /usr/share/bash-completion/completions/*
 alias setproxy="export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:1080"
 alias unsetproxy="unset ALL_PROXY"
 
+alias rm="~/trash.sh"
